@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json.schemastore.org/nest-cli",
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "src",
+  "compilerOptions": {
+    "deleteOutDir": true,
+    "webpack": true
+  },
+  "projects": {
+    "db-restaurant": {
+      "type": "library",
+      "root": "libs/db-restaurant",
+      "entryFile": "index",
+      "sourceRoot": "libs/db-restaurant/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/db-restaurant/tsconfig.lib.json"
+      }
+    }
+  }
+}
